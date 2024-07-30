@@ -1,60 +1,53 @@
-Library Management System
-Overview
-This Java-based Library Management System is designed for an engineering college. It efficiently manages book inventories and member records using hash tables, linked lists, and binary search trees. The system provides a console-based interface to add, remove, search books, register members, and manage book checkouts and returns.
+# Library Management System
 
-Features
-Book Management:
-Add, remove, and search books by title or ISBN.
-Books are organized using a binary search tree for efficient lookups.
-Member Management:
-Register new members and manage their borrowed books using a linked list.
-Book Borrowing and Returning:
-Handle book checkouts and returns, updating availability and member records.
-User Interface:
-Simple console-based interface for interacting with the system.
-Data Structures Used
-Hash Tables: For quick lookups of books and members.
-Linked Lists: To track borrowed books for each member.
-Binary Search Trees: For organizing and searching books by title.
-Installation
-Clone the Repository:
+## Description
 
-sh
-Copy code
-git clone https://github.com/your-username/LibraryManagementSystem.git
-cd LibraryManagementSystem
-Compile the Java Files:
-Make sure you have JDK installed. Open a terminal in the project directory and run:
+A Java-based Library Management System designed for an engineering college. This system leverages hash tables, linked lists, and binary search trees to efficiently manage book inventories and member records. It features a user-friendly console interface for managing library operations, including book additions, removals, searches, and handling member registrations and book checkouts/returns.
 
-sh
-Copy code
-javac src/*.java
-Run the Program:
+## Key Features
 
-sh
-Copy code
-java -cp src LibraryManagementSystem
-Usage
-After running the program, follow the on-screen menu to perform various library operations:
+- **Book Management**: Add, remove, and search books by title or ISBN. Books are organized using a binary search tree for efficient lookups.
+- **Member Management**: Register new members and track their borrowed books using a linked list.
+- **Book Borrowing and Returning**: Manage book checkouts and returns, updating availability and member records.
+- **User Interface**: Simple console-based interface for interacting with the system and performing various library operations.
 
-List all books
-Find book by ISBN
-Add new book
-Remove book
-Register new member
-Borrow book
-Return book
-Exit
-Code Structure
-Book.java: Defines the book object with attributes like title, author, ISBN, and availability status.
-Member.java: Represents a library member with borrowed books management.
-Library.java: Contains methods for book and member management, including adding, removing, borrowing, and returning books.
-LibraryManagementSystem.java: Provides the console-based user interface and manages user interactions.
-Contributing
-Feel free to fork the repository and submit pull requests. Contributions to enhance functionality or fix issues are welcome!
+## Getting Started
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+### Prerequisites
 
-Contact
-For any questions or feedback, please contact your-email@example.com.
+- Java Development Kit (JDK) 8 or higher
+- A Java IDE or text editor (e.g., IntelliJ IDEA, Eclipse, VSCode)
+- Command line tools for compiling and running Java programs
+
+## Project Structure
+- **Book.java**: Represents a book in the library.
+- **Member.java**: Represents a member of the library.
+- **Library.java**: Manages books and members.
+- **LibrarySystem.java**: Main class to run the system.
+
+## How to Run
+1. Ensure you have JDK installed.
+2. Compile the Java files:
+   ```sh
+   javac Book.java Member.java Library.java LibrarySystem.java
+
+### Steps to Run the Program
+
+1. **Create Directory Structure**:
+   - Create a new directory for your project, e.g., `LibraryManagementSystem`.
+   - Inside this directory, create the Java files: `Book.java`, `Member.java`, `Library.java`, and `LibrarySystem.java`.
+   - Copy the provided code into the respective files.
+
+2. **Compile the Program**:
+   - Open a terminal or command prompt, navigate to the directory containing the Java files, and compile them:
+     ```sh
+     javac Book.java Member.java Library.java LibrarySystem.java
+     ```
+
+3. **Run the Program**:
+   - Run the `LibrarySystem` class:
+     ```sh
+     java LibrarySystem
+     ```
+
+By following these steps, you should be able to run the Library Management System and interact
